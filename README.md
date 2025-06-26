@@ -1,12 +1,33 @@
-# React + Vite
+# 🔐 D-Login
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern multi-authentication login app built with **React + Vite**.  
+This project integrates login flows for popular platforms using **Firebase**, **Supabase**, and social OAuth providers.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## ✨ Features
 
-## Expanding the ESLint configuration
+- 🔁 Vite + React setup with fast refresh
+- 🔒 Firebase authentication
+- 🌊 Supabase integration
+- 🔗 Multiple login types: GitHub, Facebook, Instagram, etc.
+- 💻 Clean UI and modular structure
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🔑 Login Providers
+
+| Platform     | Status      | Icon |
+|--------------|-------------|------|
+| GitHub       | ✅ Implemented | ![GitHub](https://skillicons.dev/icons?i=github) |
+| Facebook     | ✅ Implemented | ![Facebook](https://skillicons.dev/icons?i=facebook) |
+| Instagram    | ✅ Implemented | ![Instagram](https://skillicons.dev/icons?i=instagram) |
+| Google       | 🚧 In Progress | ![Google](https://skillicons.dev/icons?i=google) |
+| Twitter/X    | ❌ Not Yet | ![Twitter](https://skillicons.dev/icons?i=twitter) |
+
+> Icons provided by [skillicons.dev](https://skillicons.dev)
+
+---
+
+## 📁 Project Structure
+
