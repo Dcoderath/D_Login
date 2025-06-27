@@ -1,0 +1,82 @@
+body, html {
+  height: 100%;
+  font-family: 'Inter', sans-serif;
+  background-color: #1e1e1e;
+  color: #ffffff;
+}
+
+.chatgpt-login-container {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #1e1e1e;
+}
+
+.chatgpt-login-box {
+  background: #2a2a2a;
+  padding: 2.5rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.5);
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  color: #ffffff;
+}
+
+.chatgpt-login-title {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.chatgpt-login-subtitle {
+  font-size: 0.95rem;
+  color: #ccc;
+  margin-bottom: 2rem;
+}
+
+.chatgpt-login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.chatgpt-login-input {
+  padding: 0.75rem;
+  border: 1px solid #555;
+  background-color: #1e1e1e;
+  border-radius: 8px;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.chatgpt-login-input:focus {
+  border-color: #10a37f;
+  outline: none;
+}
+
+.chatgpt-login-button {
+  background-color: #10a37f;
+  color: white;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.chatgpt-login-button:hover {
+  background-color: #0e8f6c;
+}
+
+.chatgpt-login-footer {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  color: #aaa;
+}
+
+.chatgpt-login-footer a {
+  color: #10a37f;
+  text-decoration: none;
+}
