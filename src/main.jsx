@@ -1,10 +1,16 @@
-import { StrictMode } from 'react'
-import { createRoot } from 'react-dom/client'
+// src/App.jsx
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Instagram from "./components/Instagram/Instagram";
 
-import App from './App.jsx'
+const App = () => {
+  return (
+    <Router basename="/D_Login">
+      <Routes>
+        <Route path="/" element={<Instagram />} />
+      </Routes>
+    </Router>
+  );
+};
 
-createRoot(document.getElementById('root')).render(
-  <StrictMode>
-    <App />
-  </StrictMode>,
-)
+export default App;

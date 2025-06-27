@@ -27,7 +27,3 @@ This project integrates login flows for popular platforms using **Firebase**, **
 
 > Icons provided by [skillicons.dev](https://skillicons.dev)
 
----
-
-## 📁 Project Structure
-
