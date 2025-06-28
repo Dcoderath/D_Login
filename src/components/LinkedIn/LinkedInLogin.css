@@ -1,0 +1,202 @@
+/*
+LinkedIn login page UI - matches real LinkedIn login
+*/
+.linkedin-login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f3f6f8;
+  position: relative;
+  overflow: hidden;
+}
+
+.linkedin-login-box {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.10);
+  padding: 2.5rem 2.5rem 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 370px;
+  max-width: 95vw;
+  z-index: 1;
+}
+
+.linkedin-logo {
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
+  color: #0a66c2;
+  filter: drop-shadow(0 0 8px #0a66c2cc);
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+.linkedin-login-box h2 {
+  color: #1a1a1a;
+  font-size: 2.1rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.linkedin-login-alt {
+  width: 100%;
+  margin-bottom: 1.1rem;
+}
+.linkedin-login-alt button {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  background: #fff;
+  color: #232323;
+  font-size: 1.08rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 0.7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  transition: background 0.2s, color 0.2s;
+}
+.linkedin-login-alt button svg {
+  font-size: 1.3rem;
+}
+.linkedin-login-divider {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0.7rem 0 1.1rem 0;
+}
+.linkedin-login-divider .line {
+  flex: 1;
+  height: 1px;
+  background: #e6e6e6;
+}
+.linkedin-login-divider .or {
+  color: #7c7c7c;
+  font-size: 1rem;
+  margin: 0 1rem;
+  font-weight: 600;
+}
+
+.linkedin-login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+.linkedin-login-label {
+  color: #232323;
+  font-size: 1.01rem;
+  margin-bottom: 0.2rem;
+  font-weight: 500;
+}
+.linkedin-login-input {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #e6e6e6;
+  background: #f3f6f8;
+  color: #232323;
+  font-size: 1.1rem;
+  outline: none;
+  margin-bottom: 0.7rem;
+  transition: border 0.2s;
+}
+.linkedin-login-input:focus {
+  border: 1.5px solid #0a66c2;
+}
+
+.linkedin-login-box .linkedin-login-show {
+  color: #0a66c2;
+  font-size: 0.98rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.linkedin-login-box .linkedin-login-forgot {
+  color: #0a66c2;
+  font-size: 0.98rem;
+  margin-bottom: 1.1rem;
+  text-align: right;
+  text-decoration: none;
+  font-weight: 500;
+  cursor: pointer;
+  width: 100%;
+}
+
+.linkedin-login-keep {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.7rem;
+  color: #232323;
+  font-size: 0.98rem;
+}
+
+.linkedin-login-box button[type="submit"] {
+  width: 100%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: #0a66c2;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+}
+.linkedin-login-box button[type="submit"]:hover {
+  background: #004182;
+}
+.linkedin-login-box button[type="submit"]:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.linkedin-login-signup {
+  color: #232323;
+  font-size: 1.01rem;
+  margin-top: 1.1rem;
+  text-align: center;
+}
+.linkedin-login-signup a {
+  color: #0a66c2;
+  font-weight: 600;
+  text-decoration: none;
+  margin-left: 0.3rem;
+}
+.linkedin-login-footer {
+  color: #7c7c7c;
+  font-size: 0.93rem;
+  margin-top: 2.2rem;
+  text-align: center;
+  line-height: 1.7;
+}
+.linkedin-login-footer a {
+  color: #0a66c2;
+  text-decoration: none;
+  margin: 0 0.3rem;
+}
+.linkedin-success {
+  color: #0a66c2;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+.linkedin-error {
+  color: #ff5252;
+  margin-top: 0.5rem;
+  font-weight: 600;
+}
+@media (max-width: 600px) {
+  .linkedin-login-box {
+    width: 98vw;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+}
