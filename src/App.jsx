@@ -31,6 +31,8 @@ import TwitterLogin from "./components/Twitter/TwitterLogin";
 import SnapchatLogin from "./components/Snapchat/SnapchatLogin";
 import LinkedInLogin from "./components/LinkedIn/LinkedInLogin";
 import TikTokLogin from "./components/TikTok/TikTokLogin";
+import GitHubLogin from "./components/GitHub/GitHubLogin";
+import FirebaseLogin from "./components/Firebase/FirebaseLogin";
 import LoginDashboard from "./components/LoginDashboard/LoginDashboard";
 
 const App = () => {
@@ -46,6 +48,8 @@ const App = () => {
         <Route path="/snapchat" element={<SnapchatLogin />} />
         <Route path="/linkedin" element={<LinkedInLogin />} />
         <Route path="/tiktok" element={<TikTokLogin />} />
+        <Route path="/github" element={<GitHubLogin />} />
+        <Route path="/firebase" element={<FirebaseLogin />} />
       </Routes>
     </Router>
   );

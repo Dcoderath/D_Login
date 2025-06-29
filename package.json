@@ -13,8 +13,10 @@
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
+    "@fontsource/press-start-2p": "^5.2.6",
     "@supabase/supabase-js": "^2.50.2",
     "firebase": "^11.9.1",
+    "framer-motion": "^12.19.2",
     "lucide-react": "^0.523.0",
     "pocketbase": "^0.26.1",
     "react": "^19.1.0",

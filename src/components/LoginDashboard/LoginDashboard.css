@@ -4,12 +4,12 @@
   justify-content: center;
   align-items: center;
   gap: 2rem;
-  background-color: #1e1e1e; /* dark background */
+  background-color: #1e1e1e !important; /* dark background */
   flex-wrap: wrap;
 }
 
 .login-icon-button {
-  background-color: #2a2a2a;
+  background-color: #000000 !important;
   border: 2px solid transparent;
   border-radius: 50%;
   padding: 1rem;
@@ -23,7 +23,7 @@
 }
 
 .login-icon-button:hover {
-  border-color: #10a37f;
+  border-color: #10a397;
   background-color: #333;
   transform: scale(1.1);
 }
@@ -34,7 +34,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #1e1e1e;
+  background: #1e1e1e !important;
   position: relative;
   overflow: hidden;
 }
@@ -73,7 +73,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: #2a2a2a;
+  background: #000000 !important;
   border: 2px solid transparent;
   color: #fff;
   box-shadow: 0 4px 10px rgba(0,0,0,0.2);
@@ -133,6 +133,134 @@
   bottom: 10%;
   transform: translate(50%, 50%);
 }
+.dashboard-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background: #1e1e1e !important;
+  position: relative;
+  font-family: 'Press Start 2P', cursive, monospace;
+}
+.dashboard-center-text {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.7rem !important;
+  font-weight: 800;
+  color: #fff !important;
+  letter-spacing: 2px;
+  z-index: 3;
+  pointer-events: none;
+  text-shadow: 0 2px 16px #000, 0 0 8px #fff2;
+  font-family: 'Press Start 2P', cursive, monospace;
+  text-transform: uppercase;
+}
+.dashboard-icons-radial {
+  position: relative;
+  width: 420px;
+  height: 420px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dashboard-icon-circle {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  background: #2a2a2a !important;
+  box-shadow: 0 4px 24px #000a, 0 0 0 4px #23232b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  border: none !important;
+}
+.dashboard-icon-circle:hover {
+  box-shadow: 0 8px 32px #10a37f99, 0 0 0 0 #10a37f;
+  background: #333;
+  transform: scale(1.13);
+}
+.dashboard-icons-radial .dashboard-icon-circle > * {
+  font-size: 2.7rem !important;
+}
+.dashboard-icons-radial .dashboard-icon-circle:nth-child(1) { left: 50%; top: 0; transform: translate(-50%, 0); }
+.dashboard-icons-radial .dashboard-icon-circle:nth-child(2) { left: 88%; top: 18%; transform: translate(-50%, -50%); }
+.dashboard-icons-radial .dashboard-icon-circle:nth-child(3) { left: 100%; top: 50%; transform: translate(-100%, -50%); }
+.dashboard-icons-radial .dashboard-icon-circle:nth-child(4) { left: 88%; top: 82%; transform: translate(-50%, -50%); }
+.dashboard-icons-radial .dashboard-icon-circle:nth-child(5) { left: 50%; top: 100%; transform: translate(-50%, -100%); }
+.dashboard-icons-radial .dashboard-icon-circle:nth-child(6) { left: 12%; top: 82%; transform: translate(-50%, -50%); }
+.dashboard-icons-radial .dashboard-icon-circle:nth-child(7) { left: 0; top: 50%; transform: translate(0, -50%); }
+.dashboard-icons-radial .dashboard-icon-circle:nth-child(8) { left: 12%; top: 18%; transform: translate(-50%, -50%); }
+.dashboard-icons-radial .dashboard-icon-circle:nth-child(9) { left: 30%; top: 5%; transform: translate(-50%, 0); }
+.dashboard-icons-radial .dashboard-icon-circle:nth-child(10) { left: 70%; top: 5%; transform: translate(-50%, 0); }
+.dashboard-main-heading {
+  width: 100%;
+  text-align: center;
+  font-size: 2.3rem;
+  font-family: 'Press Start 2P', cursive, monospace;
+  color: #fff;
+  background: #1e1e1e;
+  padding: 2.2rem 0 1.2rem 0;
+  letter-spacing: 2px;
+  font-weight: 900;
+  text-shadow: 0 2px 16px #0008, 0 0 8px #2c536499;
+  border-radius: 0 0 32px 32px;
+  margin-bottom: 2.5rem;
+  text-transform: uppercase;
+  box-shadow: 0 4px 32px #0002;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+.dashboard-icons-3d {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5rem 2.5rem;
+  background: none;
+  z-index: 2;
+}
+.dashboard-icon-3d {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  background: #2a2a2a !important;
+  color: #fff;
+  box-shadow: 0 4px 24px #0002;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  font-size: 3.2rem;
+  transition: box-shadow 0.2s, transform 0.2s, background 0.2s;
+  z-index: 2;
+  border: 2.5px solid transparent;
+  outline: none;
+}
+.dashboard-icon-3d:hover {
+  box-shadow: 0 8px 32px #10a37f99, 0 0 0 0 #10a37f;
+  background: #333;
+  color: #fff;
+  transform: scale(1.13);
+  outline: none;
+  border-color: #10a37f;
+}
+.dashboard-icon-3d:active {
+  background: #222;
+  color: #fff;
+  outline: none;
+  border-color: #10a37f;
+}
 @media (max-width: 600px) {
   .login-dashboard-radial-center {
     width: 260px;
@@ -148,5 +276,57 @@
   }
   .login-icon-label {
     font-size: 0.7rem;
+  }
+  .dashboard-icons-radial {
+    width: 98vw;
+    height: 60vw;
+    min-width: 0;
+    min-height: 0;
+  }
+  .dashboard-icon-circle {
+    width: 54px;
+    height: 54px;
+  }
+  .dashboard-center-text {
+    font-size: 1.2rem;
+  }
+  .dashboard-icons-radial .dashboard-icon-circle > * {
+    font-size: 1.3rem !important;
+  }
+  .dashboard-icons-3d {
+    width: 98vw;
+    height: 60vw;
+    min-width: 0;
+    min-height: 0;
+  }
+  .dashboard-icon-3d {
+    width: 64px;
+    height: 64px;
+    font-size: 1.7rem;
+  }
+}
+@media (max-width: 800px) {
+  .dashboard-main-heading {
+    font-size: 1.1rem;
+    padding: 1.2rem 0 0.7rem 0;
+    margin-bottom: 1.2rem;
+  }
+  .dashboard-icons-3d {
+    width: 98vw;
+    gap: 1.2rem 1.2rem;
+  }
+  .dashboard-icon-3d {
+    width: 64px;
+    height: 64px;
+    font-size: 1.7rem;
+  }
+  .dashboard-center-text {
+    font-size: 1.5rem;
+  }
+}
+@media (max-width: 1200px) {
+  .dashboard-icons-3d {
+    max-width: 98vw;
+    gap: 1.5rem 1.5rem;
   }
 }

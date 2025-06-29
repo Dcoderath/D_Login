@@ -1,0 +1,483 @@
+/*
+Firebase login page UI - improved for realism and usability
+*/
+.firebase-login-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #f5f5f5;
+}
+
+.firebase-login-box {
+  background: #f5f5f5;
+  border-radius: 50%;
+  box-shadow: 0 4px 32px rgba(255,193,7,0.13), 0 2px 8px #0001;
+  padding: 3.5rem 2.5rem 2.5rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  max-width: 95vw;
+  max-height: 95vw;
+  z-index: 1;
+  justify-content: center;
+  position: relative;
+  border: 2.5px solid #fff;
+}
+
+.firebase-logo {
+  font-size: 2.7rem;
+  margin-bottom: 0.5rem;
+  color: #ffca28;
+  filter: drop-shadow(0 0 8px #ffca28cc);
+}
+
+.firebase-logo-circle {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #fffde7 0%, #ffe082 100%);
+  box-shadow: 0 2px 16px rgba(255,193,7,0.18);
+  margin: 0 auto 1.2rem auto;
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 4px solid #fff;
+}
+
+.firebase-login-title {
+  color: #ff9800;
+  font-size: 1.15rem;
+  margin-bottom: 1.2rem;
+  font-weight: 900;
+  letter-spacing: 2px;
+  text-align: center;
+  font-family: 'Press Start 2P', cursive, monospace;
+  text-transform: uppercase;
+  margin-top: 70px;
+}
+
+.firebase-login-box h2 {
+  color: #222;
+  font-size: 2.1rem;
+  margin-bottom: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.firebase-login-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  align-items: center;
+}
+.firebase-login-label {
+  color: #232323;
+  font-size: 0.85rem;
+  margin-bottom: 0.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: 'Press Start 2P', cursive, monospace;
+}
+.firebase-login-input {
+  width: 90%;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1.5px solid #ffe082;
+  background: #fffde7;
+  color: #232323;
+  font-size: 1.1rem;
+  outline: none;
+  margin-bottom: 0.7rem;
+  transition: border 0.2s;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.firebase-login-input:focus {
+  border: 2px solid #ffb300;
+}
+
+.firebase-password-row {
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+
+.firebase-show-password {
+  background: none;
+  border: none;
+  color: #ff9800;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.85rem;
+  font-family: 'Press Start 2P', cursive, monospace;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.firebase-login-btn {
+  width: 90%;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(90deg, #ffb300 60%, #ff9800 100%);
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 900;
+  cursor: pointer;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.firebase-login-btn:hover {
+  background: linear-gradient(90deg, #ffe082 60%, #ffb300 100%);
+}
+.firebase-login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.firebase-login-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.75rem;
+  margin: 0.7rem 0 0.2rem 0;
+  font-family: 'Press Start 2P', cursive, monospace;
+  text-transform: uppercase;
+}
+.firebase-forgot, .firebase-signup {
+  color: #ff9800;
+  text-decoration: none;
+  font-weight: 700;
+  font-family: 'Press Start 2P', cursive, monospace;
+}
+.firebase-forgot:hover, .firebase-signup:hover {
+  text-decoration: underline;
+}
+.firebase-success {
+  color: #ffb300;
+  margin-top: 0.5rem;
+  font-weight: 900;
+  font-family: 'Press Start 2P', cursive, monospace;
+  text-transform: uppercase;
+}
+.firebase-error {
+  color: #ff5252;
+  margin-top: 0.5rem;
+  font-weight: 900;
+  font-family: 'Press Start 2P', cursive, monospace;
+  text-transform: uppercase;
+}
+.firebase-footer {
+  margin-top: 1.5rem;
+  color: #757575;
+  font-size: 0.7rem;
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.firebase-login-admin {
+  margin-top: 0.7rem;
+  text-align: center;
+}
+.firebase-admin-link {
+  color: #ff9800;
+  font-weight: 900;
+  font-family: 'Press Start 2P', cursive, monospace;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.firebase-admin-link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .firebase-login-box {
+    width: 98vw;
+    height: 98vw;
+    min-width: 0;
+    min-height: 0;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+    border-radius: 50%;
+  }
+  .firebase-logo-circle {
+    width: 70px;
+    height: 70px;
+    top: -35px;
+  }
+  .firebase-login-title {
+    font-size: 0.7rem;
+    margin-top: 40px;
+  }
+  .firebase-login-input, .firebase-password-row, .firebase-login-btn {
+    width: 98%;
+    font-size: 0.8rem;
+  }
+}
+
+/*
+Firebase real login page look
+*/
+.firebase-login-real-bg {
+  min-height: 100vh;
+  background: #f5f5f5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.firebase-login-real-logo {
+  background: #fff;
+  border-radius: 50%;
+  border: 2.5px solid #ffb300;
+  box-shadow: 0 2px 8px #ffb30022;
+  width: 72px;
+  height: 72px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+}
+
+.firebase-login-real-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #0002;
+  width: 370px;
+  max-width: 95vw;
+  padding: 2.5rem 2.2rem 2rem 2.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.firebase-login-real-title {
+  font-size: 2rem;
+  font-weight: 400;
+  color: #202124;
+  margin-bottom: 0.2rem;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.firebase-login-real-subtitle {
+  font-size: 1.1rem;
+  color: #5f6368;
+  margin-bottom: 1.5rem;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+
+.firebase-login-real-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.firebase-login-real-input {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 4px;
+  border: 1.5px solid #dadce0;
+  background: #fff;
+  color: #202124;
+  font-size: 1.1rem;
+  outline: none;
+  margin-bottom: 0.2rem;
+  transition: border 0.2s;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.firebase-login-real-input:focus {
+  border: 2px solid #1a73e8;
+}
+
+.firebase-login-real-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.2rem;
+}
+.firebase-login-real-show {
+  background: none;
+  border: none;
+  color: #1a73e8;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-transform: none;
+  letter-spacing: 0;
+  padding: 0 0.3rem;
+  margin-left: 0.2rem;
+}
+.firebase-login-real-forgot {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.firebase-login-real-forgot:hover {
+  text-decoration: underline;
+}
+.firebase-login-real-btn {
+  width: 100%;
+  padding: 0.9rem 1rem;
+  border-radius: 4px;
+  border: none;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 500;
+  cursor: pointer;
+  margin-top: 0.7rem;
+  margin-bottom: 0.5rem;
+  transition: background 0.2s, color 0.2s;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-transform: none;
+  letter-spacing: 0;
+}
+.firebase-login-real-btn:hover {
+  background: #1765c1;
+}
+.firebase-login-real-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.firebase-login-real-error {
+  color: #d93025;
+  margin-top: 0.2rem;
+  font-weight: 500;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.firebase-login-real-success {
+  color: #1a73e8;
+  margin-top: 0.2rem;
+  font-weight: 500;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.firebase-login-real-footer {
+  margin-top: 1.2rem;
+  color: #757575;
+  font-size: 0.9rem;
+  text-align: center;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.firebase-login-real-footer a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+.firebase-login-real-footer a:hover {
+  text-decoration: underline;
+}
+.firebase-login-real-create {
+  margin-top: 1.2rem;
+  text-align: left;
+  width: 100%;
+  font-size: 1rem;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.firebase-login-real-create a {
+  color: #1a73e8;
+  text-decoration: none;
+}
+.firebase-login-real-create a:hover {
+  text-decoration: underline;
+}
+.firebase-login-admin {
+  margin-top: 1.2rem;
+  text-align: left;
+  width: 100%;
+}
+.firebase-admin-link {
+  color: #ff9800;
+  font-weight: 700;
+  font-family: 'Press Start 2P', cursive, monospace;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  font-size: 0.9rem;
+}
+.firebase-admin-link:hover {
+  text-decoration: underline;
+}
+@media (max-width: 600px) {
+  .firebase-login-real-card {
+    width: 98vw;
+    min-width: 0;
+    padding: 1.2rem 0.5rem 1rem 0.5rem;
+  }
+  .firebase-login-real-logo {
+    width: 48px;
+    height: 48px;
+    margin-bottom: 0.7rem;
+  }
+  .firebase-login-real-title {
+    font-size: 1.3rem;
+  }
+  .firebase-login-real-subtitle {
+    font-size: 0.9rem;
+  }
+  .firebase-login-real-input, .firebase-login-real-btn {
+    font-size: 0.9rem;
+    padding: 0.7rem 0.7rem;
+  }
+}
+.firebase-login-real-label {
+  display: block;
+  font-size: 1rem;
+  color: #5f6368;
+  font-family: 'Roboto', Arial, sans-serif;
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+  margin-left: 2px;
+}
+.firebase-login-real-field-group {
+  width: 100%;
+  margin-bottom: 1.1rem;
+}
+.firebase-login-real-password-row {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+.firebase-login-real-show {
+  background: none;
+  border: none;
+  color: #1a73e8;
+  font-weight: 500;
+  cursor: pointer;
+  font-size: 0.95rem;
+  font-family: 'Roboto', Arial, sans-serif;
+  text-transform: none;
+  letter-spacing: 0;
+  padding: 0 0.3rem;
+  margin-left: 0.2rem;
+}
+.firebase-login-real-links-row {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 1.2rem;
+}
+.firebase-login-real-forgot {
+  color: #1a73e8;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-family: 'Roboto', Arial, sans-serif;
+}
+.firebase-login-real-forgot:hover {
+  text-decoration: underline;
+}

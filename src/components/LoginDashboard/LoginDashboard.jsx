@@ -1,61 +1,43 @@
 // src/components/LoginDashboard/LoginDashboard.jsx
 import React from 'react';
+import { motion } from "framer-motion";
 import { useNavigate } from 'react-router-dom';
 import './LoginDashboard.css';
-import { FaInstagram, FaRedditAlien, FaFacebookSquare, FaSnapchatGhost, FaLinkedin } from 'react-icons/fa';
-import { SiOpenai, SiTiktok } from 'react-icons/si';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaInstagram, FaRedditAlien, FaFacebookF, FaSnapchatGhost, FaLinkedinIn, FaGithub, FaTwitter } from 'react-icons/fa';
+import { SiOpenai, SiTiktok, SiFirebase } from 'react-icons/si';
+import "@fontsource/press-start-2p";
+
+const icons = [
+  { icon: <FaInstagram color="#E1306C" />, route: "/instagram", label: "Instagram" },
+  { icon: <FaFacebookF color="#1877F3" />, route: "/facebook", label: "Facebook" },
+  { icon: <SiOpenai color="#10a37f" />, route: "/login", label: "ChatGPT" },
+  { icon: <FaRedditAlien color="#FF4500" />, route: "/reddit", label: "Reddit" },
+  { icon: <FaTwitter color="#1DA1F2" />, route: "/twitter", label: "Twitter/X" },
+  { icon: <FaSnapchatGhost color="#FFFC00" />, route: "/snapchat", label: "Snapchat" },
+  { icon: <FaLinkedinIn color="#0077B5" />, route: "/linkedin", label: "LinkedIn" },
+  { icon: <SiTiktok color="#000" />, route: "/tiktok", label: "TikTok" },
+  { icon: <FaGithub color="#181717" />, route: "/github", label: "GitHub" },
+  { icon: <SiFirebase color="#ffb300" />, route: "/firebase", label: "Firebase" },
+];
 
 const LoginDashboard = () => {
   const navigate = useNavigate();
-
   return (
-    <div className="login-dashboard-radial-outer">
-      <div className="login-dashboard-radial-center">
-        <div className="login-dashboard-radial-title">D.login</div>
-        {/* Lines for each icon */}
-        <div className="login-dashboard-radial-line to" />
-        <div className="login-dashboard-radial-line right" />
-        <div className="login-dashboard-radial-line bottom" />
-        <div className="login-dashboard-radial-line left" />
-        <div className="login-dashboard-radial-line topleft" />
-        <div className="login-dashboard-radial-line topright" />
-        <div className="login-dashboard-radial-line bottomleft" />
-        <div className="login-dashboard-radial-line bottomright" />
-        {/* Icons at ends of lines */}
-        <button className="login-icon-button radial top" onClick={() => navigate('/login')} title="ChatGPT Login">
-          <SiOpenai size={40} />
-          <span className="login-icon-label">ChatGPT</span>
-        </button>
-        <button className="login-icon-button radial right" onClick={() => navigate('/instagram')} title="Instagram Login">
-          <FaInstagram size={40} color="#E1306C" />
-          <span className="login-icon-label">Instagram</span>
-        </button>
-        <button className="login-icon-button radial bottom" onClick={() => navigate('/facebook')} title="Facebook Login">
-          <FaFacebookSquare size={40} color="#1877F3" />
-          <span className="login-icon-label">Facebook</span>
-        </button>
-        <button className="login-icon-button radial left" onClick={() => navigate('/reddit')} title="Reddit Login">
-          <FaRedditAlien size={40} color="#FF4500" />
-          <span className="login-icon-label">Reddit</span>
-        </button>
-        {/* Diagonals */}
-        <button className="login-icon-button radial topright" onClick={() => navigate('/twitter')} title="Twitter Login">
-          <FaXTwitter size={40} color="#1da1f2" />
-          <span className="login-icon-label">Twitter</span>
-        </button>
-        <button className="login-icon-button radial bottomright" onClick={() => navigate('/snapchat')} title="Snapchat Login">
-          <FaSnapchatGhost size={40} color="#FFFC00" />
-          <span className="login-icon-label">Snapchat</span>
-        </button>
-        <button className="login-icon-button radial bottomleft" onClick={() => navigate('/linkedin')} title="LinkedIn Login">
-          <FaLinkedin size={40} color="#0077b5" />
-          <span className="login-icon-label">LinkedIn</span>
-        </button>
-        <button className="login-icon-button radial topleft" onClick={() => navigate('/tiktok')} title="TikTok Login">
-          <SiTiktok size={40} color="#fff" />
-          <span className="login-icon-label">TikTok</span>
-        </button>
+    <div className="dashboard-container">
+      <div className="dashboard-main-heading">Choose a Login Platform</div>
+      <div className="dashboard-icons-3d">
+        {icons.map((item, i) => (
+          <motion.div
+            key={i}
+            className="dashboard-icon-3d"
+            whileHover={{ scale: 1.18, boxShadow: "0 0 32px #ffe08299" }}
+            whileTap={{ scale: 0.95 }}
+            onClick={() => navigate(item.route)}
+            title={item.label}
+          >
+            {item.icon}
+          </motion.div>
+        ))}
       </div>
     </div>
   );
