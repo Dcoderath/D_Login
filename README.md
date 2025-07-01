@@ -29,3 +29,4 @@ This project integrates login flows for popular platforms using **Firebase**, **
 | Twitter/X    | ❌ Not Yet                                            | ![Twitter](https://skillicons.dev/icons?i=twitter) |
 
 > Icons provided by [skillicons.dev](https://skillicons.dev)
+updating more login pages
