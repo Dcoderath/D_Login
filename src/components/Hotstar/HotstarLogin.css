@@ -1,0 +1,113 @@
+.hotstar-login-bg {
+  min-height: 100vh;
+  width: 100vw;
+  background: #0b1014;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hotstar-login-center {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 40px;
+}
+
+.hotstar-logo-svg {
+  margin-bottom: 32px;
+  margin-top: 24px;
+}
+
+.hotstar-login-box {
+  background: #1c232b;
+  padding: 48px 40px 32px 40px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.7);
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+}
+
+.hotstar-signin-title {
+  color: #fff;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 28px;
+  text-align: left;
+}
+
+.hotstar-login-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.hotstar-login-input {
+  background: #232b34;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  margin-bottom: 16px;
+  padding: 16px;
+  font-size: 1rem;
+}
+
+.hotstar-login-input:focus {
+  outline: 2px solid #00b8f4;
+}
+
+.hotstar-login-btn {
+  background: #00b8f4;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  cursor: pointer;
+  margin-bottom: 12px;
+  transition: background 0.2s;
+  width: 100%;
+}
+
+.hotstar-login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.hotstar-login-btn:hover:not(:disabled) {
+  background: #0086b3;
+}
+
+.hotstar-signup-now {
+  color: #b3b3b3;
+  font-size: 1rem;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.hotstar-signup-now a {
+  color: #00b8f4;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.hotstar-signup-now a:hover {
+  text-decoration: underline;
+}
+
+.hotstar-success {
+  color: #46d369;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.hotstar-error {
+  color: #00b8f4;
+  margin-bottom: 10px;
+  font-size: 1rem;
+  text-align: center;
+}

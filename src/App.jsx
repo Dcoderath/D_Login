@@ -33,6 +33,12 @@ import LinkedInLogin from "./components/LinkedIn/LinkedInLogin";
 import TikTokLogin from "./components/TikTok/TikTokLogin";
 import GitHubLogin from "./components/GitHub/GitHubLogin";
 import FirebaseLogin from "./components/Firebase/FirebaseLogin";
+import NetflixLogin from "./components/Netflix/NetflixLogin";
+import JioCinemaLogin from "./components/JioCinema/JioCinemaLogin";
+import HotstarLogin from "./components/Hotstar/HotstarLogin";
+import PrimeVideoLogin from "./components/PrimeVideo/PrimeVideoLogin";
+import SpotifyLogin from "./components/Spotify/SpotifyLogin";
+import DiscordLogin from "./components/Discord/DiscordLogin";
 import LoginDashboard from "./components/LoginDashboard/LoginDashboard";
 
 const App = () => {
@@ -50,6 +56,12 @@ const App = () => {
         <Route path="/tiktok" element={<TikTokLogin />} />
         <Route path="/github" element={<GitHubLogin />} />
         <Route path="/firebase" element={<FirebaseLogin />} />
+        <Route path="/netflix" element={<NetflixLogin />} />
+        <Route path="/jiocinema" element={<JioCinemaLogin />} />
+        <Route path="/hotstar" element={<HotstarLogin />} />
+        <Route path="/primevideo" element={<PrimeVideoLogin />} />
+        <Route path="/spotify" element={<SpotifyLogin />} />
+        <Route path="/discord" element={<DiscordLogin />} />
       </Routes>
     </Router>
   );
